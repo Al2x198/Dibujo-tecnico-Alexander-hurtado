@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <pattern id="grid-mec" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#CBD5E1" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="#F8FAFC"/>
+  <rect x="20" y="20" width="760" height="560" fill="url(#grid-mec)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Engranaje principal izquierda -->
+  <g transform="translate(245, 255)">
+    <line x1="-180" y1="0" x2="180" y2="0" stroke="#EA580C" stroke-width="1.3" stroke-dasharray="14 4 3 4"/>
+    <line x1="0" y1="-180" x2="0" y2="180" stroke="#EA580C" stroke-width="1.3" stroke-dasharray="14 4 3 4"/>
+    <circle cx="0" cy="0" r="142" fill="none" stroke="#0F172A" stroke-width="2.2" stroke-dasharray="16 8"/>
+    <circle cx="0" cy="0" r="124" fill="rgba(2,132,199,0.06)" stroke="#0284C7" stroke-width="1.8" stroke-dasharray="10 4 2 4"/>
+    <circle cx="0" cy="0" r="106" fill="none" stroke="#0F172A" stroke-width="2.2"/>
+    <circle cx="0" cy="0" r="46" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.6"/>
+    <!-- Chavetero -->
+    <rect x="-12" y="-58" width="24" height="16" fill="#FFFFFF" stroke="#0F172A" stroke-width="2"/>
+    <!-- Taladros de aligeramiento -->
+    <circle cx="0" cy="-78" r="14" fill="#FFFFFF" stroke="#334155" stroke-width="1.8"/>
+    <circle cx="0" cy="78" r="14" fill="#FFFFFF" stroke="#334155" stroke-width="1.8"/>
+    <circle cx="-78" cy="0" r="14" fill="#FFFFFF" stroke="#334155" stroke-width="1.8"/>
+    <circle cx="78" cy="0" r="14" fill="#FFFFFF" stroke="#334155" stroke-width="1.8"/>
+  </g>
+
+  <!-- Cuadro de tolerancias GD&T y especificaciones derecha -->
+  <g transform="translate(465, 105)" font-family="monospace">
+    <rect x="0" y="0" width="275" height="60" fill="#FFFFFF" stroke="#0F172A" stroke-width="2"/>
+    <line x1="55" y1="0" x2="55" y2="60" stroke="#0F172A" stroke-width="1.5"/>
+    <line x1="205" y1="0" x2="205" y2="60" stroke="#0F172A" stroke-width="1.5"/>
+    <circle cx="27.5" cy="30" r="13" fill="none" stroke="#0284C7" stroke-width="2"/>
+    <circle cx="27.5" cy="30" r="5" fill="none" stroke="#0284C7" stroke-width="2"/>
+    <text x="130" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#0F172A">Ø 0.02</text>
+    <text x="240" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#EA580C">A</text>
+
+    <rect x="0" y="90" width="275" height="190" fill="#FFFFFF" stroke="#334155" stroke-width="1.6"/>
+    <rect x="0" y="90" width="275" height="32" fill="#0F172A"/>
+    <text x="14" y="111" font-size="12" font-weight="700" fill="#FFFFFF">DATOS DE TALLER // ISO 2203</text>
+    <text x="14" y="148" font-size="13" fill="#0F172A">NÚMERO DE DIENTES: Z = 28</text>
+    <text x="14" y="176" font-size="13" fill="#0284C7" font-weight="700">MÓDULO NORMAL: m = 2.5 mm</text>
+    <text x="14" y="204" font-size="13" fill="#0F172A">AJUSTE EJE: Ø46 H7/g6</text>
+    <text x="14" y="232" font-size="13" fill="#334155">ACABADO: Ra 1.6 µm</text>
+    <text x="14" y="260" font-size="13" fill="#EA580C" font-weight="700">MATERIAL: ACERO F-125</text>
+  </g>
+
+  <text x="60" y="515" font-family="monospace" font-size="15" font-weight="700" fill="#0F172A">INGENIERÍA MECÁNICA E INDUSTRIAL // ISO 1101 &amp; GD&amp;T</text>
+  <text x="60" y="539" font-family="monospace" font-size="12" fill="#0284C7">DESPIECE DE TRANSMISIONES · ENGRANAJES · AJUSTES Y TOLERANCIAS</text>
+</svg>

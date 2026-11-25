@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <pattern id="grid-elc" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#CBD5E1" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="#F8FAFC"/>
+  <rect x="20" y="20" width="760" height="560" fill="url(#grid-elc)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Placa PCB izquierda -->
+  <rect x="55" y="75" width="420" height="365" rx="14" fill="rgba(2,132,199,0.04)" stroke="#0F172A" stroke-width="2.5"/>
+  <!-- Taladros PCB -->
+  <circle cx="80" cy="100" r="8" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+  <circle cx="450" cy="100" r="8" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+  <circle cx="80" cy="415" r="8" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+  <circle cx="450" cy="415" r="8" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+
+  <!-- Microcontrolador central -->
+  <rect x="200" y="190" width="130" height="120" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.5"/>
+  <text x="265" y="255" text-anchor="middle" font-family="monospace" font-size="16" font-weight="700" fill="#0F172A">MCU IC1</text>
+
+  <!-- Pistas PCB 45°/90° -->
+  <g fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round">
+    <polyline points="200,215 135,215 110,185 88,185"/>
+    <polyline points="200,250 120,250 120,305"/>
+    <polyline points="200,285 155,285 155,355 215,355"/>
+    <polyline points="330,215 395,215 415,175"/>
+    <polyline points="330,250 405,250 405,330 355,330"/>
+  </g>
+  <!-- Pads -->
+  <g fill="#EA580C">
+    <circle cx="88" cy="185" r="5"/><circle cx="215" cy="355" r="5"/>
+    <circle cx="415" cy="175" r="5"/><circle cx="355" cy="330" r="5"/>
+  </g>
+  <!-- Símbolo resistencia IEC -->
+  <rect x="92" y="305" width="56" height="20" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.2"/>
+  <text x="120" y="344" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#EA580C">R1 10kΩ</text>
+
+  <!-- Diseño industrial / ergonomía de carcasa derecha -->
+  <g transform="translate(515, 75)">
+    <rect x="0" y="0" width="230" height="365" fill="#FFFFFF" stroke="#334155" stroke-width="1.8"/>
+    <rect x="0" y="0" width="230" height="30" fill="#0F172A"/>
+    <text x="12" y="20" font-family="monospace" font-size="11" font-weight="700" fill="#FFFFFF">CARCASA // ERGONOMÍA 3D</text>
+    <!-- Vista de carcasa curva acotada -->
+    <rect x="42" y="68" width="146" height="230" rx="28" fill="rgba(2,132,199,0.08)" stroke="#0F172A" stroke-width="2.4"/>
+    <rect x="64" y="96" width="102" height="118" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.8"/>
+    <circle cx="115" cy="256" r="18" fill="none" stroke="#EA580C" stroke-width="2"/>
+    <text x="115" y="330" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#0284C7">R28 // ABS MOLDEADO</text>
+  </g>
+
+  <text x="55" y="515" font-family="monospace" font-size="15" font-weight="700" fill="#0F172A">DISEÑO ELECTRÓNICO Y DE PRODUCTO // IEC 60617 &amp; IPC-2221</text>
+  <text x="55" y="539" font-family="monospace" font-size="12" fill="#0284C7">ESQUEMAS DE CIRCUITOS · RUTADO PCB · PROTOTIPADO ERGONÓMICO 3D</text>
+</svg>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plataforma educativa y visual dedicada al Dibujo Técnico: fundamentos, galería de láminas normalizadas, historia de la representación gráfica, aplicaciones y normativa ISO." />
+  <title>TRAZO // Dibujo Técnico — Inicio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="inicio">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- =====================================================================
+       BARRA DE NAVEGACIÓN SUPERIOR FIJA (MULTI-PÁGINA)
+       ===================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="brand" aria-label="Inicio — TRAZO Dibujo Técnico">
+        <svg class="brand__logo" viewBox="0 0 40 40" width="38" height="38" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" fill="none" stroke="#334155" stroke-width="1.5" />
+          <line x1="20" y1="0" x2="20" y2="40" stroke="#0284C7" stroke-width="1" stroke-dasharray="3 2" />
+          <line x1="0" y1="20" x2="40" y2="20" stroke="#0284C7" stroke-width="1" stroke-dasharray="3 2" />
+          <polygon points="8,31 8,9 30,31" fill="rgba(2, 132, 199, 0.12)" stroke="#0F172A" stroke-width="2" stroke-linejoin="round" />
+          <polygon points="13,26 13,18 21,26" fill="#F8FAFC" stroke="#334155" stroke-width="1.25" />
+          <circle cx="26" cy="14" r="5" fill="none" stroke="#EA580C" stroke-width="1.75" />
+          <circle cx="26" cy="14" r="1.5" fill="#EA580C" />
+        </svg>
+        <div class="brand__text">
+          <span class="brand__title">TRAZO<span class="accent-cyan">.DT</span></span>
+          <span class="brand__meta">LÁMINA 00 // ISO-128</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link is-active" aria-current="page">
+          <span class="nav-link__num">01</span> Inicio
+        </a>
+        <a href="galeria.html" class="nav-link">
+          <span class="nav-link__num">02</span> Galería
+        </a>
+        <a href="historia.html" class="nav-link">
+          <span class="nav-link__num">03</span> Historia
+        </a>
+        <a href="aplicaciones.html" class="nav-link">
+          <span class="nav-link__num">04</span> Aplicaciones
+        </a>
+        <a href="normativa.html" class="nav-link">
+          <span class="nav-link__num">05</span> Normativa
+        </a>
+      </nav>
+
+      <div class="navbar__actions">
+        <span class="scale-pill" title="Sistema de proyección de primer diedro (ISO-E)">
+          <svg viewBox="0 0 28 16" width="24" height="14" aria-hidden="true">
+            <polygon points="2,4 12,2 12,14 2,12" fill="none" stroke="currentColor" stroke-width="1.3" />
+            <circle cx="21" cy="8" r="5" fill="none" stroke="currentColor" stroke-width="1.3" />
+            <circle cx="21" cy="8" r="2.2" fill="none" stroke="currentColor" stroke-width="1.3" />
+          </svg>
+          ISO-E
+        </span>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="container mobile-menu__nav" aria-label="Navegación móvil">
+        <a href="index.html" class="mobile-link is-active" aria-current="page">
+          <span>01 //</span> Inicio
+        </a>
+        <a href="galeria.html" class="mobile-link">
+          <span>02 //</span> Galería de Láminas
+        </a>
+        <a href="historia.html" class="mobile-link">
+          <span>03 //</span> Historia del Dibujo Técnico
+        </a>
+        <a href="aplicaciones.html" class="mobile-link">
+          <span>04 //</span> Aplicaciones Profesionales
+        </a>
+        <a href="normativa.html" class="mobile-link">
+          <span>05 //</span> Normativa y Fundamentos ISO
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- =====================================================================
+         HERO SECTION + TABLERO VECTORIAL ANIMADO EN TIEMPO REAL
+         ===================================================================== -->
+    <section class="section hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="blueprint-tag">
+              <span class="dot"></span>
+              <span>SISTEMA NORMALIZADO // LENGUAJE GRÁFICO UNIVERSAL</span>
+            </div>
+
+            <h1 class="hero__title">
+              La precisión detrás de cada gran creación
+            </h1>
+
+            <p class="hero__subtitle">
+              El dibujo técnico transforma ideas abstractas en planos exactos y verificables.
+              Es el idioma común con el que arquitectos, ingenieros y diseñadores definen formas,
+              dimensiones, tolerancias y procesos constructivos sin margen para la ambigüedad.
+            </p>
+
+            <div class="hero__actions">
+              <a href="galeria.html" class="btn btn--primary">
+                <span>Explorar Galería</span>
+                <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="historia.html" class="btn btn--secondary">
+                <span>Comenzar recorrido</span>
+              </a>
+            </div>
+
+            <dl class="hero__specs">
+              <div class="spec-cell">
+                <dt>NORMATIVA BASE</dt>
+                <dd>ISO 128 / UNE-EN</dd>
+              </div>
+              <div class="spec-cell">
+                <dt>PROYECCIONES</dt>
+                <dd>Diédrico &amp; Axonométrico</dd>
+              </div>
+              <div class="spec-cell">
+                <dt>PRECISIÓN</dt>
+                <dd>± 0.01 mm (CAD/ISO)</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero__visual">
+            <div class="drafting-board" id="drafting-board">
+              <div class="drafting-board__header">
+                <span class="mono-label">FIG. 01 — TRAZADO ISOMÉTRICO Y CONSTRUCCIÓN GEOMÉTRICA</span>
+                <div class="drafting-board__controls">
+                  <button type="button" class="board-btn is-active" id="toggle-guides" aria-pressed="true" title="Mostrar u ocultar líneas auxiliares y ejes">
+                    Ejes
+                  </button>
+                  <button type="button" class="board-btn is-active" id="toggle-dims" aria-pressed="true" title="Mostrar u ocultar cotas">
+                    Cotas
+                  </button>
+                  <button type="button" class="board-btn" id="replay-hero-svg" title="Volver a dibujar trazado paso a paso">
+                    ↺ Redibujar
+                  </button>
+                </div>
+              </div>
+
+              <svg
+                id="hero-svg"
+                class="hero-svg is-animating"
+                viewBox="0 0 540 420"
+                role="img"
+                aria-label="Ilustración técnica animada de una pieza mecánica en proyección isométrica junto a una escuadra, un compás y líneas de acotación"
+              >
+                <defs>
+                  <marker id="arrow-cyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#0284C7" />
+                  </marker>
+                  <marker id="arrow-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#EA580C" />
+                  </marker>
+                  <pattern id="hatch-45" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+                    <line x1="0" y1="0" x2="0" y2="8" stroke="#0284C7" stroke-width="1" stroke-opacity="0.45" />
+                  </pattern>
+                </defs>
+
+                <g class="svg-layer-guides" stroke="#94A3B8" stroke-width="0.9">
+                  <line x1="260" y1="250" x2="260" y2="48" stroke="#0284C7" stroke-dasharray="6 4" stroke-opacity="0.55" />
+                  <line x1="260" y1="250" x2="455" y2="138" stroke="#0284C7" stroke-dasharray="6 4" stroke-opacity="0.55" />
+                  <line x1="260" y1="250" x2="65" y2="138" stroke="#0284C7" stroke-dasharray="6 4" stroke-opacity="0.55" />
+                  <circle class="draw-line delay-1" cx="260" cy="180" r="118" fill="none" stroke="#CBD5E1" stroke-dasharray="4 4" />
+                  <path class="draw-line delay-1" d="M 145 275 A 120 120 0 0 1 260 115" fill="none" stroke="#EA580C" stroke-width="1" stroke-dasharray="5 3" stroke-opacity="0.6" />
+                  <line x1="120" y1="296" x2="400" y2="296" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3 3" />
+                  <path d="M 298 296 A 38 38 0 0 0 293 277" fill="none" stroke="#0284C7" stroke-width="1.2" />
+                  <text x="305" y="289" fill="#0284C7" font-family="JetBrains Mono, monospace" font-size="10">30°</text>
+                  <path d="M 222 296 A 38 38 0 0 1 227 277" fill="none" stroke="#0284C7" stroke-width="1.2" />
+                  <text x="200" y="289" fill="#0284C7" font-family="JetBrains Mono, monospace" font-size="10">30°</text>
+                </g>
+
+                <g class="svg-layer-object">
+                  <polygon class="fade-fill" points="260,296 382,226 382,190 260,260" fill="rgba(2, 132, 199, 0.08)" />
+                  <polygon class="fade-fill" points="260,296 138,226 138,190 260,260" fill="rgba(15, 23, 42, 0.05)" />
+                  <polygon class="fade-fill" points="260,124 316,156 316,204 260,172" fill="url(#hatch-45)" />
+
+                  <g stroke="#64748B" stroke-width="1.2" stroke-dasharray="5 4" fill="none">
+                    <path class="draw-line delay-2" d="M 260 260 L 260 172" />
+                    <path class="draw-line delay-2" d="M 204 228 L 260 196 L 316 228" />
+                  </g>
+
+                  <g stroke="#0F172A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <path class="draw-line delay-1" d="M 260 296 L 382 226 L 382 190 L 316 152" />
+                    <path class="draw-line delay-1" d="M 260 296 L 138 226 L 138 190 L 204 152" />
+                    <path class="draw-line delay-2" d="M 138 190 L 260 260 L 382 190" />
+                    <path class="draw-line delay-2" d="M 260 296 L 260 260" />
+
+                    <path class="draw-line delay-3" d="M 204 228 L 204 124 L 260 92 L 316 124 L 316 228" />
+                    <path class="draw-line delay-3" d="M 204 124 L 260 156 L 316 124" />
+                    <path class="draw-line delay-3" d="M 260 156 L 260 260" />
+
+                    <ellipse class="draw-line delay-4" cx="260" cy="124" rx="22" ry="12.7" stroke="#0284C7" stroke-width="1.8" />
+                    <ellipse class="draw-line delay-4" cx="348" cy="227" rx="13" ry="8" transform="rotate(-30 348 227)" stroke="#0F172A" stroke-width="1.6" />
+                  </g>
+                </g>
+
+                <g class="svg-layer-tools">
+                  <g class="tool-float" transform="translate(30, 265)">
+                    <polygon points="0,120 0,10 110,120" fill="rgba(2, 132, 199, 0.10)" stroke="#0284C7" stroke-width="1.6" stroke-linejoin="round" />
+                    <polygon points="18,102 18,48 72,102" fill="#F8FAFC" stroke="#0284C7" stroke-width="1.1" />
+                    <g stroke="#0284C7" stroke-width="1">
+                      <line x1="15" y1="120" x2="15" y2="114" />
+                      <line x1="30" y1="120" x2="30" y2="112" />
+                      <line x1="45" y1="120" x2="45" y2="114" />
+                      <line x1="60" y1="120" x2="60" y2="112" />
+                      <line x1="75" y1="120" x2="75" y2="114" />
+                      <line x1="90" y1="120" x2="90" y2="112" />
+                    </g>
+                    <text x="6" y="134" fill="#334155" font-family="JetBrains Mono, monospace" font-size="9">45° / ESCUADRA</text>
+                  </g>
+
+                  <g class="tool-compass" transform="translate(425, 34)">
+                    <line x1="34" y1="0" x2="34" y2="16" stroke="#334155" stroke-width="3" stroke-linecap="round" />
+                    <circle cx="34" cy="22" r="7" fill="#F8FAFC" stroke="#0F172A" stroke-width="2" />
+                    <line x1="30" y1="28" x2="8" y2="106" stroke="#334155" stroke-width="2.5" stroke-linecap="round" />
+                    <line x1="38" y1="28" x2="60" y2="106" stroke="#334155" stroke-width="2.5" stroke-linecap="round" />
+                    <line x1="60" y1="106" x2="63" y2="116" stroke="#EA580C" stroke-width="2" stroke-linecap="round" />
+                    <line x1="8" y1="106" x2="6" y2="115" stroke="#0F172A" stroke-width="1.5" />
+                    <circle cx="63" cy="116" r="2.2" fill="#EA580C" />
+                    <text x="4" y="133" fill="#334155" font-family="JetBrains Mono, monospace" font-size="9">R = 42.0 mm</text>
+                  </g>
+                </g>
+
+                <g class="svg-layer-dims">
+                  <line x1="382" y1="190" x2="430" y2="190" stroke="#0284C7" stroke-width="0.9" />
+                  <line x1="260" y1="92" x2="430" y2="92" stroke="#0284C7" stroke-width="0.9" />
+                  <line x1="422" y1="95" x2="422" y2="187" stroke="#0284C7" stroke-width="1.2" marker-start="url(#arrow-cyan)" marker-end="url(#arrow-cyan)" />
+                  <rect x="403" y="131" width="38" height="16" fill="#F8FAFC" />
+                  <text x="422" y="143" text-anchor="middle" fill="#0284C7" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">68.0</text>
+
+                  <line x1="260" y1="296" x2="260" y2="338" stroke="#EA580C" stroke-width="0.9" />
+                  <line x1="382" y1="226" x2="382" y2="268" stroke="#EA580C" stroke-width="0.9" />
+                  <line x1="263" y1="330" x2="379" y2="263" stroke="#EA580C" stroke-width="1.2" marker-start="url(#arrow-orange)" marker-end="url(#arrow-orange)" />
+                  <g transform="translate(322, 297) rotate(-30)">
+                    <rect x="-20" y="-9" width="40" height="16" fill="#F8FAFC" />
+                    <text x="0" y="3" text-anchor="middle" fill="#EA580C" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">120.0</text>
+                  </g>
+
+                  <line x1="260" y1="124" x2="185" y2="74" stroke="#0284C7" stroke-width="1" />
+                  <line x1="185" y1="74" x2="122" y2="74" stroke="#0284C7" stroke-width="1" />
+                  <circle cx="260" cy="124" r="2.2" fill="#0284C7" />
+                  <text x="122" y="69" fill="#0F172A" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">Ø 28 H7</text>
+                </g>
+              </svg>
+
+              <div class="drafting-board__footer">
+                <span>ESC. 1:1 // UNIDADES: mm</span>
+                <span>PROYECCIÓN ISOMÉTRICA (120°)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Tarjetas de Pilares -->
+        <div class="pillars" id="pilares" aria-label="Pilares fundamentales del dibujo técnico">
+          <article class="pillar-card">
+            <div class="pillar-card__top">
+              <span class="pillar-card__code">PILAR 01</span>
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="#0284C7" stroke-width="1.7" aria-hidden="true">
+                <circle cx="16" cy="16" r="11" />
+                <circle cx="16" cy="16" r="3" />
+                <line x1="16" y1="2" x2="16" y2="9" />
+                <line x1="16" y1="23" x2="16" y2="30" />
+                <line x1="2" y1="16" x2="9" y2="16" />
+                <line x1="23" y1="16" x2="30" y2="16" />
+              </svg>
+            </div>
+            <h2 class="pillar-card__title">Precisión</h2>
+            <p class="pillar-card__desc">
+              Cada línea, ángulo y cota responde a relaciones geométricas exactas. El uso de escalas y tolerancias asegura que la pieza fabricada coincida fielmente con el diseño proyectado.
+            </p>
+            <a class="pillar-card__link" href="normativa.html#tipos-linea">Ver tolerancias y líneas →</a>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-card__top">
+              <span class="pillar-card__code">PILAR 02</span>
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="#EA580C" stroke-width="1.7" aria-hidden="true">
+                <rect x="4" y="6" width="24" height="20" rx="1" />
+                <line x1="4" y1="19" x2="28" y2="19" />
+                <line x1="17" y1="19" x2="17" y2="26" />
+                <line x1="8" y1="11" x2="22" y2="11" stroke-dasharray="3 2" />
+                <line x1="8" y1="15" x2="18" y2="15" />
+              </svg>
+            </div>
+            <h2 class="pillar-card__title">Normalización</h2>
+            <p class="pillar-card__desc">
+              Estándares internacionales como <strong>ISO</strong>, <strong>DIN</strong> y <strong>UNE</strong> unifican formatos de papel, grosores de línea, simbología y cajetines para que un plano sea legible en cualquier país.
+            </p>
+            <a class="pillar-card__link" href="normativa.html#formatos">Ver formatos ISO 5457 →</a>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-card__top">
+              <span class="pillar-card__code">PILAR 03</span>
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="#0F172A" stroke-width="1.7" aria-hidden="true">
+                <polygon points="16,4 27,10 27,22 16,28 5,22 5,10" />
+                <polyline points="5,10 16,16 27,10" />
+                <line x1="16" y1="16" x2="16" y2="28" />
+                <line x1="16" y1="4" x2="16" y2="16" stroke="#0284C7" stroke-dasharray="2.5 2" />
+              </svg>
+            </div>
+            <h2 class="pillar-card__title">Representación Espacial</h2>
+            <p class="pillar-card__desc">
+              Traduce objetos tridimensionales a un plano bidimensional mediante vistas ortogonales diédricas, cortes seccionales y perspectivas axonométricas o cónicas.
+            </p>
+            <a class="pillar-card__link" href="galeria.html?cat=diedrico">Explorar sistema diédrico →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         DIRECTORIO VISUAL DE PÁGINAS Y SEGMENTOS DEL SITIO
+         ===================================================================== -->
+    <section class="section section--bordered" id="explorar">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__meta">
+            <span class="section-index">ÍNDICE DE MÓDULOS // ARQUITECTURA DEL SITIO</span>
+            <span class="section-code">ACCESO DIRECTO POR PÁGINA Y SEGMENTO</span>
+          </div>
+          <h2 class="section-title">Recorrido por Secciones y Segmentos</h2>
+          <p class="section-desc">
+            Cada módulo del menú dispone de su propia página dedicada con láminas multimedia, especificaciones ISO y controles interactivos.
+          </p>
+        </header>
+
+        <div class="portal-grid">
+          <article class="portal-card">
+            <div class="portal-card__media">
+              <img src="img/lam-03-vistas-ortogonales.jpg" alt="Vista previa de láminas técnicas en la galería" loading="lazy" />
+              <span class="portal-card__badge">PÁGINA 02 // 8 LÁMINAS</span>
+            </div>
+            <div class="portal-card__body">
+              <h3>Galería de Láminas y Planos</h3>
+              <p>Explora planos normalizados con filtros por categoría y visor lightbox de cajetín ISO.</p>
+              <div class="portal-card__chips">
+                <a href="galeria.html?cat=geometria" class="segment-chip">Geometría Descriptiva</a>
+                <a href="galeria.html?cat=diedrico" class="segment-chip">Sistema Diédrico</a>
+                <a href="galeria.html?cat=isometrica" class="segment-chip">Isométrica</a>
+                <a href="galeria.html?cat=arquitectonicos" class="segment-chip">Arquitectura</a>
+              </div>
+              <a href="galeria.html" class="btn btn--secondary btn--sm">Abrir página de Galería →</a>
+            </div>
+          </article>
+
+          <article class="portal-card">
+            <div class="portal-card__media">
+              <img src="img/hist-02-renacimiento.jpg" alt="Ilustración histórica del Renacimiento y perspectiva cónica" loading="lazy" />
+              <span class="portal-card__badge">PÁGINA 03 // 4 HITOS</span>
+            </div>
+            <div class="portal-card__body">
+              <h3>Historia del Dibujo Técnico</h3>
+              <p>Recorrido interactivo desde las proporciones de la Antigüedad hasta el modelado CAD y BIM.</p>
+              <div class="portal-card__chips">
+                <a href="historia.html?era=0" class="segment-chip">Antigüedad</a>
+                <a href="historia.html?era=1" class="segment-chip">Renacimiento</a>
+                <a href="historia.html?era=2" class="segment-chip">Rev. Industrial</a>
+                <a href="historia.html?era=3" class="segment-chip">Era Digital</a>
+              </div>
+              <a href="historia.html" class="btn btn--secondary btn--sm">Abrir página de Historia →</a>
+            </div>
+          </article>
+
+          <article class="portal-card">
+            <div class="portal-card__media">
+              <img src="img/app-02-mecanica.svg" alt="Diagrama técnico de aplicaciones en ingeniería mecánica" loading="lazy" />
+              <span class="portal-card__badge">PÁGINA 04 // 4 DISCIPLINAS</span>
+            </div>
+            <div class="portal-card__body">
+              <h3>Aplicaciones Profesionales</h3>
+              <p>Analiza planos, escalas y normativas reales en arquitectura, mecánica, obra civil y electrónica.</p>
+              <div class="portal-card__chips">
+                <a href="aplicaciones.html?tab=arquitectura" class="segment-chip">Arquitectura</a>
+                <a href="aplicaciones.html?tab=mecanica" class="segment-chip">Mecánica</a>
+                <a href="aplicaciones.html?tab=civil" class="segment-chip">Ing. Civil</a>
+                <a href="aplicaciones.html?tab=electronica" class="segment-chip">Electrónica</a>
+              </div>
+              <a href="aplicaciones.html" class="btn btn--secondary btn--sm">Abrir página de Aplicaciones →</a>
+            </div>
+          </article>
+
+          <article class="portal-card">
+            <div class="portal-card__media">
+              <img src="img/norma-formatos-iso.svg" alt="Diagrama proporcional de formatos ISO serie A" loading="lazy" />
+              <span class="portal-card__badge">PÁGINA 05 // ESTÁNDARES ISO</span>
+            </div>
+            <div class="portal-card__body">
+              <h3>Normativa y Fundamentos ISO</h3>
+              <p>Guía visual de tipos de línea ISO 128, formatos de papel serie A (ISO 5457) y anatomía del cajetín.</p>
+              <div class="portal-card__chips">
+                <a href="normativa.html#tipos-linea" class="segment-chip">Líneas ISO 128</a>
+                <a href="normativa.html#formatos" class="segment-chip">Formatos A0–A5</a>
+                <a href="normativa.html#cajetin" class="segment-chip">Cajetín ISO 7200</a>
+              </div>
+              <a href="normativa.html" class="btn btn--secondary btn--sm">Abrir página de Normativa →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="line-legend" aria-label="Leyenda normalizada de tipos de línea ISO 128">
+        <div class="line-legend__item">
+          <svg viewBox="0 0 90 12" width="90" height="12" aria-hidden="true">
+            <line x1="2" y1="6" x2="88" y2="6" stroke="#0F172A" stroke-width="2.4" />
+          </svg>
+          <span><strong>Tipo A:</strong> Contorno visto</span>
+        </div>
+        <div class="line-legend__item">
+          <svg viewBox="0 0 90 12" width="90" height="12" aria-hidden="true">
+            <line x1="2" y1="6" x2="88" y2="6" stroke="#0284C7" stroke-width="1.2" />
+          </svg>
+          <span><strong>Tipo B:</strong> Cota y auxiliar</span>
+        </div>
+        <div class="line-legend__item">
+          <svg viewBox="0 0 90 12" width="90" height="12" aria-hidden="true">
+            <line x1="2" y1="6" x2="88" y2="6" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 4" />
+          </svg>
+          <span><strong>Tipo E:</strong> Arista oculta</span>
+        </div>
+        <div class="line-legend__item">
+          <svg viewBox="0 0 90 12" width="90" height="12" aria-hidden="true">
+            <line x1="2" y1="6" x2="88" y2="6" stroke="#EA580C" stroke-width="1.3" stroke-dasharray="14 4 2 4" />
+          </svg>
+          <span><strong>Tipo G:</strong> Eje de simetría</span>
+        </div>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="brand brand--footer">
+            <span class="brand__title">TRAZO<span class="accent-cyan">.DT</span></span>
+            <span class="brand__meta">GUÍA INTERACTIVA DE DIBUJO TÉCNICO</span>
+          </div>
+          <p class="footer__about">
+            Recurso educativo diseñado bajo estética de plano técnico (blueprint) para comprender la geometría, normalización y aplicaciones reales de la representación gráfica.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Páginas del Sitio</h3>
+          <ul class="footer__list">
+            <li><a href="index.html">01 // Inicio y Tablero</a></li>
+            <li><a href="galeria.html">02 // Galería de Láminas</a></li>
+            <li><a href="historia.html">03 // Historia y Cronología</a></li>
+            <li><a href="aplicaciones.html">04 // Aplicaciones Reales</a></li>
+            <li><a href="normativa.html">05 // Normativa ISO y Líneas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Normativas Recomendadas</h3>
+          <ul class="footer__list footer__list--specs">
+            <li><code>ISO 128</code> — Principios generales de representación y tipos de línea.</li>
+            <li><code>ISO 129-1</code> — Principios de acotación e indicaciones dimensionales.</li>
+            <li><code>ISO 5457</code> — Formatos y disposición de los elementos gráficos (A0–A4).</li>
+            <li><code>ISO 7200 / UNE</code> — Campos de datos en cuadros de rotulación (cajetín).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>PROYECTO EDUCATIVO DE DIBUJO TÉCNICO // ARQUITECTURA MULTIPÁGINA</span>
+        <span>REV. 02 // LÁMINAS MULTIMEDIA + DIAGRAMAS VECTORIALES</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
